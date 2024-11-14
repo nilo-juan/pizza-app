@@ -1,0 +1,19 @@
+server:
+  port: 8987
+
+spring:
+  application:
+    name: proyecto01
+  datasource:
+    url: jdbc:mysql://localhost:3306/bd_git_pizzeria
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
