@@ -1,1 +1,2 @@
 spring.application.name=proyecto01
+server.port=8485
