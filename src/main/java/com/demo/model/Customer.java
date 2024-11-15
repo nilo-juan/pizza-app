@@ -1,11 +1,14 @@
 package com.demo.model;
 
 import jakarta.persistence.*;
+import lombok.Builder;
+
 import java.time.LocalDate;
 import java.util.List;
 
 @Entity
 @Table(name = "customers")
+@Builder
 public class Customer {
 
     @Id
