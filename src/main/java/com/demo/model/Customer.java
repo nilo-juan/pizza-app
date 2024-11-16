@@ -1,7 +1,10 @@
 package com.demo.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -9,6 +12,9 @@ import java.util.List;
 @Entity
 @Table(name = "customers")
 @Builder
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Customer {
 
     @Id
@@ -33,5 +39,7 @@ public class Customer {
     private String email;
 
     private LocalDate birthday;
+
+    private Boolean active;
 
 }
